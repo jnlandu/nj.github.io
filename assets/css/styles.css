@@ -1,4 +1,4 @@
-header.header-main {
+/* header.header-main {
   position: relative;
   z-index: 1;
   display: flex;
@@ -10,6 +10,9 @@ header.header-main {
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-}
+} */
 
 /*# sourceMappingURL=styles.css.map */
+
+/* @import url("/_sass/main.css"); */
+@import url("/sass/main.css");
