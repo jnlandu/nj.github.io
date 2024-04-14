@@ -1,0 +1,80 @@
+nav.nav-wrap {
+  transition: all 0.3s easy-in;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 900;
+  max-width: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 80px;
+}
+@media screen and (max-width: 600px) {
+  nav.nav-wrap {
+    padding: 35px 20px;
+  }
+}
+nav.nav-wrap a.nav-logo {
+  height: 50px;
+}
+nav.nav-wrap a.nav-logo img {
+  height: 100%;
+  width: auto;
+  /* position: absolute; */
+}
+nav.nav-wrap a.nav-logo.nav-dark img path {
+  fill: #1c1e24;
+}
+nav.nav-wrap ul.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 900px) {
+  nav.nav-wrap ul.navigation {
+    display: none;
+  }
+}
+nav.nav-wrap ul.navigation li {
+  display: block;
+  padding-right: 30px;
+}
+nav.nav-wrap ul.navigation li a {
+  color: #ffffff;
+  transition: all 0.15s ease-in;
+  font-size: 1em;
+}
+nav.nav-wrap ul.navigation li a:hover {
+  color: #cccccc;
+}
+nav.nav-wrap ul.navigation li:last-of-type {
+  padding-right: 0;
+}
+nav.nav-wrap ul.navigation.nav-dark li a {
+  color: #1c1e24;
+}
+nav.nav-wrap ul.navigation.nav-dark li a:hover {
+  color: #cccccc;
+}
+
+.who-is-he {
+  max-width: 600px;
+  margin: 100px auto 100px auto;
+  padding: 0 20%;
+}
+.who-is-he h2 {
+  bottom: 15px;
+}
+.who-is-he p a {
+  font-weight: 600px;
+  color: #517AF4;
+  transition: all 0.15s ease-out;
+}
+.who-is-he p a:hover {
+  color: #9EA3B4;
+}
+
+/*# sourceMappingURL=nav.css.map */

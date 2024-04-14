@@ -1,0 +1,77 @@
+$white: #ffffff
+$black: #000
+$blue: #1e90ff
+$primary: #1c1e24
+$secondary:#9EA3B4
+$highlight: #517AF4
+nav.nav-wrap
+    transition: all 0.3s easy-in
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    z-index: 900
+    max-width: 100px
+    display: flex
+    justify-content: space-between
+    margin: auto
+    padding: 80px
+    @media screen and (max-width: 600px) 
+        padding: 35px 20px
+    a.nav-logo
+        height: 50px
+        img
+            height: 100%
+            width: auto
+            /* position: absolute; */
+            // z-index: 2
+            // opacity: .9
+    a.nav-logo.nav-dark
+        img
+            path
+                fill: $primary
+
+    ul.navigation
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        @media (max-width: 900px) 
+            display: none
+        li
+            display: block
+            padding-right: 30px 
+            a 
+                color:$white
+                transition: all 0.15s ease-in
+                font-size: 1em
+            a:hover
+                color: darken($white,20%)
+        li:last-of-type
+            padding-right: 0
+
+    ul.navigation.nav-dark
+        li
+            a
+                color: $primary
+            a:hover
+                color: darken($white, 20% )
+
+// who is he
+
+.who-is-he
+    max-width: 600px
+    margin:100px auto 100px auto
+    padding: 0 20%
+    h2
+        bottom: 15px
+    p
+        a
+            font-weight: 600px
+            color: $highlight
+            transition: all 0.15s ease-out
+            &:hover
+                color: $secondary
+
+
+ 
